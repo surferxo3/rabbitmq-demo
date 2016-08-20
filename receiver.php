@@ -2,7 +2,7 @@
 
 /*#############################
 * Developer: Mohammad Sharaf Ali
-* Description: Script to publish message
+* Description: Script to consume single/multiple message(s)
 * Date: 20-08-2016
 */#############################
 

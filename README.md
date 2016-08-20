@@ -5,10 +5,10 @@ This project aims to demonstrate the publisher and consumer architecture in Rabb
 ## Installation
 
 Running the script is just the matter of minutes and not ~~seconds~~. Here are the steps listed (in order):
-* Download VMware / VirtualBox and [Ubuntu Server] (https://virtualboxes.org/images/ubuntu-server/) image. After that power-up your VM.
+* Download VMware / VirtualBox and [Ubuntu Server] (https://virtualboxes.org/images/ubuntu-server/) image. After that powerup your VM.
 * For RabbitMQ installation
-  * If you are confortable with Docker than follow [these] (https://hub.docker.com/_/rabbitmq/) steps.
-  * Else for manual installtion (that I found most useful) execute the commands below in your server:
+  * If you are comfortable with Docker than follow [these] (https://hub.docker.com/_/rabbitmq/) steps.
+  * Else for manual installation (that I found most useful) execute the commands below in your server:
 ```
 #step 1 - rabbitmq-server installation with management plugin
 echo "deb http://www.rabbitmq.com/debian/ testing main"  | sudo tee  /etc/apt/sources.list.d/rabbitmq.list > /dev/null
@@ -25,8 +25,9 @@ rabbitmqctl add_user msharaf msharaf
 rabbitmqctl set_user_tags msharaf administrator
 rabbitmqctl set_permissions -p / msharaf ".*" ".*" ".*" // you can skip this and set permission later from rabbitmq web ui
 
-#steo 3
-ifconfig -a // note your ip address
+#step 3 - not your ip address
+ifconfig -a
+ip addr show // execute any
 ```
 
 * Now change the *config.php* according to your installation scenario.
@@ -38,4 +39,4 @@ ifconfig -a // note your ip address
   * If using VMware than first remove your network adapter and add it again with **Network Connection: Bridged**.
   * If using VirtualBox than select **Bridged Connection** and not **NAT**.
 
-This demo was build with love and a little bit frustration. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.
+This demo was build with love during learning of AMQP. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.

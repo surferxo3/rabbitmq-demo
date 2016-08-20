@@ -16,7 +16,7 @@ sudo wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
 sudo apt-key add rabbitmq-signing-key-public.asc
 sudo apt-get update
 sudo apt-get install rabbitmq-server --force-yes // you can skip --force-yes
-sudo service rabbitmq-server start // option as rabbitmq-server automatically starts
+sudo service rabbitmq-server start // optional as rabbitmq-server starts automatically
 sudo rabbitmq-plugins enable rabbitmq_management
 sudo service rabbitmq-server restart
 
@@ -25,9 +25,8 @@ rabbitmqctl add_user msharaf msharaf
 rabbitmqctl set_user_tags msharaf administrator
 rabbitmqctl set_permissions -p / msharaf ".*" ".*" ".*" // you can skip this and set permission later from rabbitmq web ui
 
-#step 3 - not your ip address
+#step 3 - note your inet addr
 ifconfig -a
-ip addr show // execute any
 ```
 
 * Now change the *config.php* according to your installation scenario.
@@ -38,5 +37,8 @@ ip addr show // execute any
 * For configuring network in your VM kindly follow the steps below:
   * If using VMware than first remove your network adapter and add it again with **Network Connection: Bridged**.
   * If using VirtualBox than select **Bridged Connection** and not **NAT**.
+* On your local machine the rabbitmq-server is accessed via port 5672 and its web ui is accessed via port 15672. E.g:
+  * For running your script [http://vm-server-ip:5672/sender.php] (http://vm-server-ip:5672/sender.php).
+  * For accessing management panel: [http://vm-server-ip:15672] (http://vm-server-ip:15672).
 
 This demo was build with love during learning of AMQP. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.

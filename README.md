@@ -12,7 +12,7 @@ Running the script is just the matter of minutes and not ~~seconds~~. Here are t
 ```
 #step 1 - rabbitmq-server installation with management plugin
 echo "deb http://www.rabbitmq.com/debian/ testing main"  | sudo tee  /etc/apt/sources.list.d/rabbitmq.list > /dev/null
-sudo wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+sudo wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc // to add the verification key for the package
 sudo apt-key add rabbitmq-signing-key-public.asc
 sudo apt-get update
 sudo apt-get install rabbitmq-server --force-yes // you can skip --force-yes

@@ -38,7 +38,7 @@ ifconfig -a
   * If using VMware than first remove your network adapter and add it again with **Network Connection: Bridged**.
   * If using VirtualBox than select **Bridged Connection** and not **NAT**.
 * On your local machine the rabbitmq-server is accessed via port 5672 and its web ui is accessed via port 15672. E.g:
-  * For running your script [http://vm-server-ip:5672/sender.php] (http://vm-server-ip:5672/sender.php).
-  * For accessing management panel: [http://vm-server-ip:15672] (http://vm-server-ip:15672).
+  * For running your script goto: [http://vm-server-ip:5672/sender.php] (http://vm-server-ip:5672/sender.php).
+  * For accessing management panel goto: [http://vm-server-ip:15672] (http://vm-server-ip:15672).
 
 This demo was build with love during learning of AMQP. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.

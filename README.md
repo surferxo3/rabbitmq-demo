@@ -41,4 +41,4 @@ ifconfig -a
   * For running your script goto: [http://vm-server-ip:5672/sender.php] (http://vm-server-ip:5672/sender.php).
   * For accessing management panel goto: [http://vm-server-ip:15672] (http://vm-server-ip:15672).
 
-This demo was build with love during learning of AMQP. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.
+This demo was built with love during learning of AMQP. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.

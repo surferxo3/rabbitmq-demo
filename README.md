@@ -5,7 +5,7 @@ This project aims to demonstrate the publisher and consumer architecture in Rabb
 ## Installation
 
 Running the script is just the matter of minutes and not ~~seconds~~. Here are the steps listed (in order):
-* Download VMware / VirtualBox and [Ubuntu Server] (https://virtualboxes.org/images/ubuntu-server/) image. After that powerup your VM.
+* Download VMware / VirtualBox and [Ubuntu Server] (https://virtualboxes.org/images/ubuntu-server/) image. After that power-up your VM.
 * For RabbitMQ installation
   * If you are comfortable with Docker than follow [these] (https://hub.docker.com/_/rabbitmq/) steps.
   * Else for manual installation (that I found most useful) execute the commands below in your server:

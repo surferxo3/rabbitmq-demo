@@ -26,7 +26,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 ##################### MAIN #####################
 $queue = 'dummp_queue';
-$consumer_tag = "dummy_consumer_tag"; // optional or pass empty string
+$consumer_tag = "dummy_consumer_tag"; // unique identifier - optional or pass empty string
 
 $connection = new AMQPStreamConnection(HOST, PORT, USER, PASS, VHOST);
 $channel = $connection->channel();

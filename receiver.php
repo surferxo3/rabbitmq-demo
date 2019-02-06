@@ -25,7 +25,6 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 
 ##################### MAIN #####################
-$exchange = 'dummy_exchange';
 $queue = 'dummp_queue';
 $consumer_tag = "dummy_consumer_tag"; // optional or pass empty string
 

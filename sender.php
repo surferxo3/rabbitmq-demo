@@ -27,7 +27,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 ##################### MAIN #####################
 $exchange = 'dummy_exchange';
 $queue = 'dummp_queue'; 
-$routing_key = 'dummy_routing_key'; // optional or don't pass this param
+$routing_key = 'dummy_routing_key'; // binding key - optional or don't pass this param
 
 $connection = new AMQPStreamConnection(HOST, PORT, USER, PASS, VHOST);
 $channel = $connection->channel();
